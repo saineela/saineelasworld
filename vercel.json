@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.{html,js,css,json}",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}
