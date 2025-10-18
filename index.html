@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sai Neela's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="glass-bar">
+    <a href="#"
+       onmouseover="moveHighlight(this)"
+       onmouseout="hideHighlight();resetText(this)"
+       onmousemove="lightText(event,this)">Me!</a>
+    <a href="projects"
+       onmouseover="moveHighlight(this)"
+       onmouseout="hideHighlight();resetText(this)"
+       onmousemove="lightText(event,this)">Projects</a>
+    <a href="blog"
+       onmouseover="moveHighlight(this)"
+       onmouseout="hideHighlight();resetText(this)"
+       onmousemove="lightText(event,this)">Blog</a>
+    <div class="highlight"></div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
